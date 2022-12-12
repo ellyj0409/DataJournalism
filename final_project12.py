@@ -10,11 +10,11 @@ def load_image(image_file):
 st.title("당신은 심각한 환승연애 중독입니다.")
 st.info('💡 **환승연애란?** \n\n \> 다양한 이유로 이별한 커플들이 모여 지나간 사랑을 되짚고 새로운 사랑을 찾아나가는 연애 리얼리티 프로그램 \n\n \> 2021년 시즌1, 2022년 시즌2 방영')
 
-img1 = load_image('.\project_image\환승연애_이미지1.png')
+img1 = load_image('./project_image/환승연애_이미지1.png')
 st.image(img1)
 st.write('**수상할 정도로 남의 연애에 관심이 많은 사람들이 있다.** 말 그대로 ‘남’인 그 사람과 가족도, 친구도, 전 연인도 그 무엇도 아닌 관계임에도 말이다. **그들은 바로 TIVING 의 연애 리얼리티 프로그램, ‘환승연애’ 시청자들이다.**')
 
-img2 = load_image('.\project_image\환승연애_이미지2.png')
+img2 = load_image('./project_image/환승연애_이미지2.png')
 st.image(img2)
 st.write(' 말그대로 **‘과몰입’의 시대**다. 프로그램이 종료되었음에도 불구하고 사람들은 여전히 환승연애 얘기를 하고, 출연진의 SNS 게시물에 프로그램 속 밈 (Meme)을 활용한 재치있는 댓글을 남기고 서로 적극적으로 좋아요를 눌러주기까지 한다.')
 st.write('그러나 이렇게까지 심각한 과몰입의 열풍 속에서도, 여전히 언론사의 대중 반응 언급은 단순하고 모호하기만 하다. 이에 **각 커뮤니티에서 어떤 형태로 이 프로그램에 ‘과몰입’ 하고 있는지**, 실제 대중들이 생산한 텍스트 데이터를 바탕으로 적극적으로 톺아보고자 한다. ')
@@ -26,14 +26,14 @@ st.info('💡 가장 먼저 기본적인 콘텐츠 소비 방식 분석을 위�
 st.subheader('유튜브 : 가장 대중적인 커뮤니티에서의 과몰입')
 st.info('✔️ 분석 데이터: 환승연애 시즌2 관련 유튜브 영상 댓글 약 3천개')
 
-img3 = load_image('.\project_image\youtube_comments_1,2,3,6,7 워드클라우드(전체단어).png')
+img3 = load_image('./project_image/youtube_comments_1,2,3,6,7 워드클라우드(전체단어).png')
 st.image(img3)
 st.caption('\> 전체 명사 토큰 기반 워드클라우드')
 st.code("'규민', '현규', '해은', '사람', '행복', '마음', '사랑', '생각', '눈물', '상처', '미련', '질투', '대화', '시간'")
 st.write('가장 일반 대중들이 접근하기 쉬운 커뮤니티인 유튜브에서의 환승연애는, **‘출연진’과 ‘사랑’에 대한 감성적인 해석**을 담은 단어가 주를 이루고 있었다.')
 st.write('연애 리얼리티 프로그램이라는 본 방송의 취지에 맞게, **연애와 사랑의 관점에서 몰입하여 콘텐츠를 소비**하는 경향이 존재함을 알 수 있었다.')
 
-img4 = load_image('.\project_image\youtube_comments_1,2,3,6,7 네트워크(전체단어).png')
+img4 = load_image('./project_image/youtube_comments_1,2,3,6,7 네트워크(전체단어).png')
 st.image(img4)
 st.caption('\> 전체 명사 토큰 기반 네트워크 그래프')
 st.code("'출연진의 이름' + '이해', '상처', '생각', '사랑', '연애', '서로', '감정', '마음'")
@@ -42,13 +42,13 @@ st.write('사람들은 단순히 **프로그램을 ‘프로그램’으로 보�
 
 col1, col2 = st.columns(2)
 with col1:
-    img5 = load_image('.\project_image\youtube_comments_1,2,3,6,7 네트워크(규민 기준).png')
+    img5 = load_image('./project_image/youtube_comments_1,2,3,6,7 네트워크(규민 기준).png')
     st.image(img5)
     st.caption("\> '규민' 명사 토큰 기반 네트워크 그래프")
     st.write('출연진 중 ‘규민’은 전 연인 (이하 X (엑스))인 ‘해은’ 과 동시에 언급되는 댓글이 매우 많았다.')
     st.write('**출연진 한 명 한 명의 X와의 관계, 그 서사에 몰입**하며 콘텐츠를 소비하는 경향이 존재함을 알 수 있다.')
 with col2:
-    img6 = load_image('.\project_image\youtube_comments_1,2,3,6,7 네트워크(해은 기준).png')
+    img6 = load_image('./project_image/youtube_comments_1,2,3,6,7 네트워크(해은 기준).png')
     st.image(img6)
     st.caption("\> '해은' 명사 토큰 기반 네트워크 그래프")
     st.write('반면 그의 X인 ‘해은’은 ‘사람’, ‘진심’, ‘응원’, ‘눈물’ 등 **해당 출연진 자체를 응원하고 공감**하는 댓글이 주를 이뤘다.')
@@ -56,19 +56,19 @@ with col2:
 
 col3, col4 = st.columns(2)
 with col3:
-    img7 = load_image('.\project_image\youtube_comments_1,2,3,6,7 네트워크(나연 기준).png')
+    img7 = load_image('./project_image/youtube_comments_1,2,3,6,7 네트워크(나연 기준).png')
     st.image(img7)
     st.caption("\> '나연' 명사 토큰 기반 네트워크 그래프")
     st.write('출연진 중 ‘나연’은 X인 ‘희두’ 뿐만 아니라, **‘나연’과 이어지던 ‘규민’의 X인 ‘해은’** 키워드도 함께 다수 등장했다.')
     st.write('단적인 관점으로 소비하는 게 아니라, **출연진들간의 관계성을 고려하여 다각도, 다차원으로 진정 ‘과몰입’하여 소비**하고 있음을 알 수 있다.')
 with col4:
-    img8 = load_image('.\project_image\youtube_comments_1,2,3,6,7 네트워크(희두 기준).png')
+    img8 = load_image('./project_image/youtube_comments_1,2,3,6,7 네트워크(희두 기준).png')
     st.image(img8)
     st.caption("\> '희두' 명사 토큰 기반 네트워크 그래프")
     st.write('반면 출연진 ‘희두’는 X인 ‘나연’뿐만 아니라, **‘가스라이팅’, ‘자존심’, ‘미련’, ‘상처’** 등 출연진의 행동과 관련한 대중들의 평가를 볼 수 있는 단어 언급이 많았다.')
     st.write('이를 통해, **출연진에 행동에 대해 무조건적인 응원이나 지지를 보내는 것이 아니라, 비판적인 관점에서 논하며 소비**하기도 함을 알 수 있다.')
 
-img9 = load_image('.\project_image\youtube_comments_5 워드클라우드.png')
+img9 = load_image('./project_image/youtube_comments_5 워드클라우드.png')
 st.image(img9)
 st.caption("\> 특정 출연진 정보 영상 내 댓글 - 전체 명사 토큰 기반 워드클라우드")
 st.code("'수저', '명품', '부자', '학군', '서울대', '미국 시민권', '집안'")
@@ -79,7 +79,7 @@ st.write('\n')
 st.subheader('트위터 : 실시간 공유 기반 SNS 에서의 과몰입')
 st.info('✔️ 분석 데이터: 환승연애 시즌2 관련 트윗 약 1만개')
 
-img10 = load_image('.\project_image\youtube_comments_5 워드클라우드.png')
+img10 = load_image('./project_image/youtube_comments_5 워드클라우드.png')
 st.image(img10)
 st.caption("\> 전체 명사 토큰 기반 워드클라우드")
 st.code("'연애', '사람', '얘기', '생각'")
@@ -90,11 +90,11 @@ st.write('→ 프로그램을 보고 **트위터를 통해 같이 실시간으�
 
 col5, col6 = st.columns(2)
 with col5:
-    img11 = load_image('.\project_image\트위터_네트워크_규민.png')
+    img11 = load_image('./project_image/트위터_네트워크_규민.png')
     st.image(img11)
     st.caption("\> '규민' 명사 토큰 기반 네트워크 그래프")
 with col6:
-    img12 = load_image('.\project_image\트위터_네트워크_나연.png')
+    img12 = load_image('./project_image/트위터_네트워크_나연.png')
     st.image(img12)
     st.caption("\> '나연' 명사 토큰 기반 네트워크 그래프")
 st.write('유튜브에서와 동일하게 트위터에서도 각 출연진 이름을 기반으로 한 네트워크 그래프를 생성했을 때, 유튜브와 보다 **‘규민’, ‘해은’, ‘나연’ 등 여러 출연진이 동시에 언급되는 경향**이 매우 짙게 나타났다.')
@@ -102,7 +102,7 @@ st.write('유튜브에서보다 더욱 더 강하게 **출연진간의 삼각관
 
 col7, col8 = st.columns(2)
 with col7:
-    img13 = load_image('.\project_image\트위터_네트워크_해은.png')
+    img13 = load_image('./project_image/트위터_네트워크_해은.png')
     st.image(img13)
     st.caption("\> '해은' 명사 토큰 기반 네트워크 그래프")
     st.code("'언니', '성해은', '정현규', '정규민'")
@@ -110,7 +110,7 @@ with col7:
     st.write('유튜브와 달리, **‘성해은’, ‘정현규’, ‘정규민’** 등 풀네임으로 출연진을 부르는 경우도 많았다.')
     st.write('→ 전반적으로 **트위터에서는 프로그램 출연진들과의 유대감 + 친밀감을 높게 느끼며 소비**하는 경향이 있음을 알 수 있다.')
 with col8:
-    img14 = load_image('.\project_image\트위터_네트워크_현규.png')
+    img14 = load_image('./project_image/트위터_네트워크_현규.png')
     st.image(img14)
     st.caption("\> '현규' 명사 토큰 기반 네트워크 그래프")
     st.code("'현규', '누나', '내일'")
@@ -122,21 +122,21 @@ st.info('✔️ 분석 데이터: 환승연애 시즌2 관련 더쿠, 인스티�
 
 col9, col10 = st.columns(2)
 with col9:
-    img15 = load_image('.\project_image\더쿠_워드클라우드_타이틀.png')
+    img15 = load_image('./project_image/더쿠_워드클라우드_타이틀.png')
     st.image(img15)
     st.caption("\> 더쿠 게시물 ‘제목’ 기준 전체 명사 토큰 기반 워드클라우드")
 with col10:
-    img16 = load_image('.\project_image\더쿠_워드클라우드_본문.png')
+    img16 = load_image('./project_image/더쿠_워드클라우드_본문.png')
     st.image(img16)
     st.caption("\> 더쿠 게시물 ‘본문’ 기준 전체 명사 토큰 기반 워드클라우드")
 
 col11, col12 = st.columns(2)
 with col11:
-    img17 = load_image('.\project_image\인스티즈_워드클라우드_타이틀.png')
+    img17 = load_image('./project_image/인스티즈_워드클라우드_타이틀.png')
     st.image(img17)
     st.caption("\> 인스티즈 게시물 ‘제목’ 기준 전체 명사 토큰 기반 워드클라우드")
 with col12:
-    img18 = load_image('.\project_image\인스티즈_워드클라우드_본문.png')
+    img18 = load_image('./project_image/인스티즈_워드클라우드_본문.png')
     st.image(img18)
     st.caption("\> 인스티즈 게시물 ‘본문’ 기준 전체 명사 토큰 기반 워드클라우드")
 st.write('아이돌 팬덤 커뮤니티를 기반으로하는 더쿠와 인스티즈에서는 공통적으로 **다양한 출연진의 이름을 직접적으로 언급**하는 비중이 압도적으로 높았다.')
@@ -149,21 +149,21 @@ st.info('✔️ 분석 데이터: 환승연애 시즌2 관련 디시인사이드
 
 col13, col14 = st.columns(2)
 with col13:
-    img19 = load_image('.\project_image\디시 워드클라우드(환승연애2_마이너_제목).png')
+    img19 = load_image('./project_image/디시 워드클라우드(환승연애2_마이너_제목).png')
     st.image(img19)
     st.caption("\> 환승연애2 갤러리 ‘제목’ 기준 전체 명사 토큰 기반 워드클라우드")
 with col14:
-    img20 = load_image('.\project_image\디시 워드클라우드(환승연애2_마이너_본문).png')
+    img20 = load_image('./project_image/디시 워드클라우드(환승연애2_마이너_본문).png')
     st.image(img20)
     st.caption("\> 환승연애2 갤러리 ‘본문’ 기준 전체 명사 토큰 기반 워드클라우드")
 
 col15, col16 = st.columns(2)
 with col15:
-    img21 = load_image('.\project_image\디시 워드클라우드(환승연애_마이너_제목).png')
+    img21 = load_image('./project_image/디시 워드클라우드(환승연애_마이너_제목).png')
     st.image(img21)
     st.caption("\> 환승연애1 갤러리 ‘제목’ 기준 전체 명사 토큰 기반 워드클라우드")
 with col16:
-    img22 = load_image('.\project_image\디시 워드클라우드(환승연애_마이너_본문).png')
+    img22 = load_image('./project_image/디시 워드클라우드(환승연애_마이너_본문).png')
     st.image(img22)
     st.caption("\> 환승연애1 갤러리 ‘본문’ 기준 전체 명사 토큰 기반 워드클라우드")
 
@@ -172,7 +172,7 @@ st.code("'남출', '정병', '친목', '발작', '망상', '시녀들'")
 st.write('타 커뮤니티와 달리, 디시인사이드에서는 **지극히 부정적인 단어 혹은 욕설 또한 워드클라우드에 상위 빈도 단어로서 등장**하는 경향이 있다.')
 st.write('특히, 특정 성별을 향한 비방 내용 및 공격적인 워딩이 주를 이루고 있었다.')
 
-img23 = load_image('.\project_image\디시_남출키워드_제목예시.png')
+img23 = load_image('./project_image/디시_남출키워드_제목예시.png')
 st.image(img23)
 st.write('위 데이터는 ‘남출’이라는 단어를 포함한 게시글 제목의 일부를 발췌한 것인데, 실제로 디시인사이드의 게시물들은 위 예시처럼 **일반적인 토큰화 과정으로 추출할 수 없는 워딩을 사용**하여 출연진 혹은 특정 출연진을 지지하는 유저들을 비판/비난하는 경우가 많았다.')
 st.write('마냥 출연진에 공감하고 응원하는 소비 형태 외에, **각 출연진에 대해 자체적으로 팬덤을 형성하고 서로 비방하면서 소비**하는 경향도 존재함을 알 수 있다.')
@@ -184,11 +184,11 @@ st.info('✔️ 분석 데이터: 비밀남녀 관련 유튜브 영상 댓글 �
 
 col17, col18 = st.columns(2)
 with col17:
-    img23 = load_image('.\project_image\비밀남녀 워드클라우드.png')
+    img23 = load_image('./project_image/비밀남녀 워드클라우드.png')
     st.image(img23)
     st.caption("\> 전체 명사 토큰 기반 워드클라우드")
 with col18:
-    img24 = load_image('.\project_image\비밀남녀 네트워크 그래프.png')
+    img24 = load_image('./project_image/비밀남녀 네트워크 그래프.png')
     st.image(img24)
     st.caption("\> 전체 명사 토큰 기반 네트워크 그래프")
 st.code("'여자', '남자', '본인', '사람'")
@@ -201,7 +201,7 @@ st.header('조금 더 디테일하게 톺아보기')
 st.subheader('토픽 모델링 : 트윗 주제 나눠보기')
 st.info('✔️ 분석 데이터: 환승연애 시즌2 관련 트윗 약 1만개')
 
-path_to_html1 = ".\project_html\트위터토픽모델링.html" 
+path_to_html1 = "./project_html/트위터토픽모델링.html" 
 
 with open(path_to_html1,'r') as f1: 
     html_data1 = f1.read()
@@ -220,18 +220,18 @@ st.write('이번에는 사람들이 특정 단어에 대해 유독 많이 언급
 
 col19, col20 = st.columns(2)
 with col19:
-    img25 = load_image('.\project_image\시계열그래프_날짜(규민 언급).png')
+    img25 = load_image('./project_image/시계열그래프_날짜(규민 언급).png')
     st.image(img25)
     st.caption("\> '규민' 명사 토큰 기반 시계열 언급 트윗 빈도 그래프")
     st.write('‘규민’에 대한 언급량이 가장 높았던 날은 바로 19화가 방영된 시점이었다.')
     st.write('이 회차는 ‘규민’이 X인 ‘해은’에 대해 지난 회차동안 숨겨 왔던 진짜 속마음이 드러나는 회차였다.')
 with col20:
-    img26 = load_image('.\project_image\시계열그래프_날짜(나연 언급).png')
+    img26 = load_image('./project_image/시계열그래프_날짜(나연 언급).png')
     st.image(img26)
     st.caption("\> '나연' 명사 토큰 기반 시계열 언급 트윗 빈도 그래프")
     st.write("반면 ‘나연’에 대한 언급량이 가장 높았던 날은 12화가 방영된 시점이었다.")
     st.write('이 회차는 ‘나연’이 X인 ‘희두’와의 서사가 처음으로 공개된 회차였다.')
-img27 = load_image('.\project_image\시계열그래프_날짜(엑스 언급).png')
+img27 = load_image('./project_image/시계열그래프_날짜(엑스 언급).png')
 st.image(img27)
 st.caption("\> '엑스 (X)' 명사 토큰 기반 시계열 언급 트윗 빈도 그래프")
 st.write("전반적으로 시계열 분석을 살펴 보았을 때, 대중들은 무엇보다도 **각 출연진의 전 연인 (X)에 관한 이야기가 대두되었을 때 가장 열렬한 반응**을 보이고 있었다.")
@@ -242,7 +242,7 @@ st.subheader('유사도 분석 : 그들의 과몰입은 서로 닮아있을까')
 st.info('✔️ 분석 데이터: 환승연애 시즌2 관련 각 커뮤니티 및 언론사 크롤링 데이터')
 st.write('마지막으로, 이렇게 분석해본 각 커뮤니티, 그리고 커뮤니티에서 비롯한 대중 반응을 전달하는 언론사의 기사들간의 코사인 유사도를 산출해보았다.')
 
-img28 = load_image('.\project_image\코사인_커뮤니티.png')
+img28 = load_image('./project_image/코사인_커뮤니티.png')
 st.image(img28)
 st.caption("\> 각 커뮤니티별 텍스트 데이터를 통한 코사인 유사도 기반 히트맵")
 st.write("먼저 각 커뮤니티간의 유사도를 산출해본 결과, 유독 디시인사이드가 다른 모든 커뮤니티와의 유사도가 0에 가깝게 도출되었다.")
@@ -250,7 +250,7 @@ st.write("이를 통해 **디시인사이드 갤러리가 가장 독립적인 �
 st.write("또한 트위터와 인스티즈의 유사도가 0.4 수준으로 도출되면서, 두 커뮤니티간의 소비 특성에 어느정도 공통점이 있음을 알 수 있다.")
 st.write("실제로 더쿠, 인스티즈뿐만 아니라, 트위터 또한 아이돌 팬덤 기반의 커뮤니티가 크게 형성되어 있는 SNS로서, 이러한 유사도 산출 결과가 도출되었음을 추정해볼 수 있다.")
 
-img29 = load_image('.\project_image\코사인_언론사.png')
+img29 = load_image('./project_image/코사인_언론사.png')
 st.image(img29)
 st.caption("\> 각 커뮤니티별 텍스트 데이터를 통한 코사인 유사도 기반 히트맵")
 st.write("추가로, 네이버뉴스 기반으로 추출한 뉴스 기사들과 커뮤니티간의 유사도 또한 산출해보았다.")
