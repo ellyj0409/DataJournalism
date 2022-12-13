@@ -86,7 +86,7 @@ st.write('\n')
 st.subheader('트위터 : 실시간 공유 기반 SNS 에서의 과몰입')
 st.info('✔️ 분석 데이터: 환승연애 시즌2 관련 트윗 약 1만개')
 
-img10 = load_image('./project_image/youtube_comments_5 워드클라우드.png')
+img10 = load_image('./project_image/트위터_워드클라우드.png')
 st.image(img10)
 st.caption("\> 전체 명사 토큰 기반 워드클라우드")
 st.code("'연애', '사람', '얘기', '생각'")
